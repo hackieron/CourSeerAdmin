@@ -3,7 +3,7 @@ package com.courseer.courseeradmin
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
-import com.courseer.courseeradmin.R
+
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -21,7 +21,7 @@ class CombinedActivity : AppCompatActivity() {
         viewPager = findViewById(R.id.viewPager)
         tabLayout = findViewById(R.id.tabLayout)
 
-        val fragmentList = listOf(AdminFragment(), AdminProgram(), AddTagFragment(), Transaction())
+        val fragmentList = listOf(AdminFragment(), AdminProgram(), AddTagFragment(), Transaction(), Ranking())
         val adapter = CombinedPagerAdapter(this, fragmentList)
         viewPager.adapter = adapter
 
@@ -31,6 +31,7 @@ class CombinedActivity : AppCompatActivity() {
                 1 -> tab.text = "Programs"
                 2 -> tab.text = "Add Keywords"
                 3 -> tab.text = "Records"
+                4 -> tab.text = "Rankings"
             }
         }.attach()
     }

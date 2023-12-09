@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Add any other UI elements or layout components here -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="Top 15 Recommendations"
+            android:layout_margin="10dp"/>
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphView"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:text="Legend"
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/legendLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
