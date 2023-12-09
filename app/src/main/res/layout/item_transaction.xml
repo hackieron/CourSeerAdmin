@@ -11,11 +11,15 @@
     app:cardCornerRadius="10dp"
     app:cardElevation="2dp"
     android:layout_margin="10dp">
+
     <TextView
-        android:padding="20dp"
         android:id="@+id/itemTransaction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ITEM1"/>
+        android:fontFamily="@font/dm_sans"
+        android:padding="20dp"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textStyle="normal" />
 </androidx.cardview.widget.CardView>
 </LinearLayout>

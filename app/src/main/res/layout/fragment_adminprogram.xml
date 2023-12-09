@@ -34,11 +34,9 @@
 
             <Spinner
                 android:id="@+id/programDropdown"
-                style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="15dp"
-                 />
+                android:padding="15dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -48,14 +46,16 @@
         android:layout_height="wrap_content"
 
         >
+
         <EditText
             android:id="@+id/programTitleEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
             android:background="@color/white"
             android:fontFamily="@font/dm_sans"
-            android:hint="Program Title" />
+            android:hint="Program Title"
+            android:padding="15dp"
+            android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -81,14 +81,16 @@
         android:layout_height="wrap_content"
 
         >
+
         <EditText
             android:id="@+id/shortDescriptionEditText"
-            android:padding="15dp"
-            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:fontFamily="@font/dm_sans"
-            android:hint="Short Description"/>
+            android:textColor="@color/black"
+            android:hint="Short Description"
+            android:padding="15dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -98,14 +100,16 @@
         android:layout_height="wrap_content"
 
         >
+
         <EditText
             android:id="@+id/fullDescriptionEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
             android:background="@color/white"
             android:fontFamily="@font/dm_sans"
-            android:hint="Full Description"/>
+            android:textColor="@color/black"
+            android:hint="Full Description"
+            android:padding="15dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -115,14 +119,16 @@
         android:layout_height="wrap_content"
 
         >
+
         <EditText
             android:id="@+id/subjectsEditText"
-            android:padding="15dp"
-            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:fontFamily="@font/dm_sans"
-            android:hint="Subjects"/>
+            android:textColor="@color/black"
+            android:hint="Subjects"
+            android:padding="15dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -132,14 +138,16 @@
         android:layout_height="wrap_content"
 
         >
+
         <EditText
             android:id="@+id/strandEditText"
             android:layout_width="match_parent"
-            android:padding="15dp"
-            android:background="@color/white"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:fontFamily="@font/dm_sans"
-            android:hint="Strand"/>
+            android:textColor="@color/black"
+            android:hint="Strand"
+            android:padding="15dp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -149,14 +157,16 @@
         android:layout_height="wrap_content"
 
         >
+
         <EditText
             android:id="@+id/keywordsEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
             android:background="@color/white"
             android:fontFamily="@font/dm_sans"
-            android:hint="Keywords"/>
+            android:textColor="@color/black"
+            android:hint="Keywords"
+            android:padding="15dp" />
     </androidx.cardview.widget.CardView>
 
 
@@ -173,6 +183,7 @@
                 android:fontFamily="@font/dm_sans"
                 android:text="Add"
                 android:textColor="@color/black"
+                android:backgroundTint="@color/gold"
                 android:textStyle="bold" />
 
             <Button
@@ -183,6 +194,7 @@
                 android:fontFamily="@font/dm_sans"
                 android:text="clear text"
                 android:textColor="@color/black"
+                android:backgroundTint="@color/gold"
                 android:textStyle="bold" />
 
             <Button
@@ -191,6 +203,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/addRowButton"
                 android:layout_alignEnd="@+id/addRowButton"
+                android:backgroundTint="@color/gold"
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="6dp"
@@ -206,6 +219,7 @@
                 android:layout_below="@+id/uploadCsvButton"
                 android:layout_alignStart="@+id/uploadCsvButton"
                 android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/gold"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/dm_sans"

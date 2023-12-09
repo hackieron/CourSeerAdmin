@@ -52,14 +52,16 @@
         android:layout_height="wrap_content"
 
         >
-    <EditText
-        android:id="@+id/scholarshipNameEditText"
-        android:layout_width="match_parent"
-        android:background="@color/white"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:fontFamily="@font/dm_sans"
-        android:hint="Scholarship Name" />
+
+        <EditText
+            android:id="@+id/scholarshipNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Scholarship Name"
+            android:padding="15dp"
+            android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         app3:cardCornerRadius="20dp"
@@ -67,14 +69,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-    <EditText
-        android:id="@+id/shortDescriptionEditText"
-        android:layout_width="match_parent"
-        android:padding="15dp"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:fontFamily="@font/dm_sans"
-        android:hint="Short Description" />
+
+        <EditText
+            android:id="@+id/shortDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Short Description"
+            android:padding="15dp"
+            android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         app4:cardCornerRadius="20dp"
@@ -82,14 +86,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-    <EditText
-        android:id="@+id/longDescriptionEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:padding="15dp"
-        android:fontFamily="@font/dm_sans"
-        android:hint="Long Description" />
+
+        <EditText
+            android:id="@+id/longDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Long Description"
+            android:padding="15dp"
+            android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         app5:cardCornerRadius="20dp"
@@ -97,14 +103,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-    <EditText
-        android:id="@+id/linkEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/dm_sans"
-        android:padding="15dp"
-        android:background="@color/white"
-        android:hint="Link" />
+
+        <EditText
+            android:id="@+id/linkEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/dm_sans"
+            android:hint="Link"
+            android:padding="15dp"
+            android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         app6:cardCornerRadius="20dp"
@@ -150,6 +158,7 @@
             android:fontFamily="@font/dm_sans"
             android:text="Add"
             android:textColor="@color/black"
+            android:backgroundTint="@color/gold"
             android:textStyle="bold" />
 
         <Button
@@ -160,6 +169,7 @@
             android:fontFamily="@font/dm_sans"
             android:text="clear text"
             android:textColor="@color/black"
+            android:backgroundTint="@color/gold"
             android:textStyle="bold" />
 
         <Button
@@ -169,6 +179,7 @@
             android:layout_below="@+id/addRowButton"
             android:layout_alignEnd="@+id/addRowButton"
             android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/gold"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="6dp"
             android:fontFamily="@font/dm_sans"
@@ -184,6 +195,7 @@
             android:layout_alignStart="@+id/uploadCsvButton"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/gold"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/dm_sans"
             android:text="Delete"

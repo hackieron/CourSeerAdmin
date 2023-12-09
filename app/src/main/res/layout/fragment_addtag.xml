@@ -52,6 +52,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/dm_sans"
         android:text="Add Tag"
+        android:backgroundTint="@color/gold"
         android:textColor="@color/black"
         android:textStyle="bold" />
 </LinearLayout>
