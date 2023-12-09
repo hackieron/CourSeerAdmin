@@ -1,0 +1,21 @@
+<!-- item_transaction.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    android:layout_margin="10dp">
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/itemTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ITEM1"/>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
