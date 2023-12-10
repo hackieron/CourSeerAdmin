@@ -259,8 +259,8 @@ class AdminFragment : Fragment() {
         // Assuming you have a dropdown widget in your layout with the ID scholarshipDropdown
         val scholarshipDropdown = rootView.findViewById<Spinner>(R.id.scholarshipDropdown)
 
-        val adapter =
-            ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, scholarshipNames)
+        val adapter = ArrayAdapter(context ?: return, android.R.layout.simple_spinner_item, scholarshipNames)
+
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         scholarshipDropdown.adapter = adapter

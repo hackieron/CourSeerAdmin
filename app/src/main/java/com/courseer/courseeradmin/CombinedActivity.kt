@@ -21,7 +21,7 @@ class CombinedActivity : AppCompatActivity() {
         viewPager = findViewById(R.id.viewPager)
         tabLayout = findViewById(R.id.tabLayout)
 
-        val fragmentList = listOf(AdminFragment(), AdminProgram(), AddTagFragment(), Transaction(), Ranking())
+        val fragmentList = listOf(AdminFragment(), AdminProgram(), AddTagFragment(), Transaction(), Ranking(), KeywordRanking(), Careers())
         val adapter = CombinedPagerAdapter(this, fragmentList)
         viewPager.adapter = adapter
 
@@ -32,6 +32,8 @@ class CombinedActivity : AppCompatActivity() {
                 2 -> tab.text = "Add Keywords"
                 3 -> tab.text = "Records"
                 4 -> tab.text = "Rankings"
+                5 -> tab.text = "Interests"
+                6 -> tab.text = "Careers"
             }
         }.attach()
     }

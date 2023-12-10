@@ -20,15 +20,15 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 import kotlin.random.Random
 
-class Ranking : Fragment() {
+class Careers : Fragment() {
 
-    private var filteredPrograms: String? = null // Assuming this variable holds the filtered programs
+    private var careers: String? = null // Assuming this variable holds the filtered programs
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_ranking, container, false)
+        val view = inflater.inflate(R.layout.fragment_keywordranking, container, false)
 
         // Call the function to process Firestore data and update the graph with the legend
         val legendLayout = view.findViewById<LinearLayout>(R.id.legendLayout)
@@ -48,15 +48,15 @@ class Ranking : Fragment() {
                 val programCountMap = mutableMapOf<String, Int>()
 
                 for (document in querySnapshot.documents) {
-                    val filteredProgramsString = document["filteredPrograms"] as? String
+                    val careersString = document["careers"] as? String
 
-                    filteredProgramsString?.split(",")?.forEach { program ->
+                    careersString?.split(",")?.forEach { program ->
                         val trimmedProgram = program.trim()
                         programCountMap[trimmedProgram] = programCountMap.getOrDefault(trimmedProgram, 0) + 1
                     }
                 }
 
-                val sortedProgramCountList = programCountMap.entries.sortedByDescending { it.value }.take(5)
+                val sortedProgramCountList = programCountMap.entries.sortedByDescending { it.value }.take(25)
 
                 requireActivity().runOnUiThread {
                     val series = BarGraphSeries<DataPoint>()
@@ -70,15 +70,12 @@ class Ranking : Fragment() {
                         val color = getColorForProgram(entry.key, requireContext())  // Use the same color logic
                         colors.add(color)
                     }
-                    val gridLabelRenderer = graphView.gridLabelRenderer
-                    gridLabelRenderer.verticalAxisTitle = "Times Recommended"
 
                     // Enable drawing values on top of each bar
                     series.setDrawValuesOnTop(true)
                     series.setDataWidth(0.9) // Adjust the width as needed
                     series.setSpacing(20) // Adjust the spacing as needed
                     series.valuesOnTopColor = android.R.color.black
-                    graphView.viewport.setMinX(-0.5)
 
                     // Set viewport bounds
                     graphView.viewport.isXAxisBoundsManual = true
@@ -144,8 +141,8 @@ class Ranking : Fragment() {
         // Sample color assignments for specific program names
         val programColorMap = mutableMapOf<String, Int>()
 
-        // Assuming filteredPrograms is a comma-separated string of program names
-        val distinctPrograms = filteredPrograms?.split(",")?.map { it.trim() }?.distinct()
+        // Assuming careers is a comma-separated string of program names
+        val distinctPrograms = careers?.split(",")?.map { it.trim() }?.distinct()
 
         // Assign colors dynamically based on distinct program names
         distinctPrograms?.forEachIndexed { index, distinctProgram ->
