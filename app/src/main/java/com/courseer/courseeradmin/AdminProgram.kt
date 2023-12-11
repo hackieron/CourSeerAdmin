@@ -152,7 +152,7 @@ class AdminProgram : Fragment() {
     private fun setupProgramDropdown(programTitles: List<String>) {
         val programDropdown = rootView.findViewById<Spinner>(R.id.programDropdown)
 
-        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, programTitles)
+        val adapter = ArrayAdapter(context ?: return, android.R.layout.simple_spinner_item, programTitles)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         programDropdown.adapter = adapter
