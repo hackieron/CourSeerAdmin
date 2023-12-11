@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         app:tabGravity="fill"
         app:tabIndicatorColor="@color/gold"
-        app:tabMode="fixed"
+        app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/gold"
         app:tabTextColor="@color/black" />
 
