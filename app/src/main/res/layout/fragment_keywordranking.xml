@@ -17,6 +17,8 @@
             android:textSize="20sp"
             android:textAlignment="center"
             android:text="Top 25 Interests"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dm_sans"
             android:layout_margin="10dp"/>
 
         <com.jjoe64.graphview.GraphView
@@ -34,6 +36,8 @@
             android:layout_marginEnd="20dp"
             android:padding="10dp"
             android:text="Legend"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dm_sans"
             android:textAlignment="textStart"
             android:textSize="20sp" />
 
@@ -43,6 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dm_sans"
             android:orientation="vertical"
             android:padding="4dp">
 
